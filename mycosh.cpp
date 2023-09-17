@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iostream>
 
-int factorial(int n) {
+double factorial(int n) {
     if (n <= 1) {
         return 1;
     } else {
@@ -20,7 +20,7 @@ double mycosh(double x) {
         sum += current;
         xx  *= x * x; // we need to increase as x^2, but for double
         //<-- break if accuracy |val| < 1e-4 is reached
-        if(n > 0 && sum - current < 1e-4) {
+        if(fabs(current) < 1e-4) {
             break;
         }
     }
