@@ -1,4 +1,4 @@
-// g++ mycosh.cpp && ./a.out | tee mycosh.txt
+// gcc 5.cpp && ./a.out | tee mycosh.txt
 #include <cmath>
 #include <iostream>
 
