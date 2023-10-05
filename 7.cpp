@@ -26,7 +26,7 @@ class Point
     double dist(Point p) {
         double d;
         // 1) set d to be the distance to point p:
-        d = sqrt((p.x - this->x) * (p.x - this->x) + (p.y = this->y) * (p.y = this->y));
+        d = sqrt((p.x - this->x) * (p.x - this->x) + (p.y - this->y) * (p.y - this->y));
         return d;
     }
     void print() {
@@ -44,8 +44,8 @@ class Mesh
         for (int i=0; i<nx; i++) M[i].resize(ny);
         for (int i=0; i<nx; i++) {
             for (int j=0; j<ny; j++) {
-                double x = static_cast<float>(i) / static_cast<float>(nx); // 2) put x on segment [0;1]
-                double y = static_cast<float>(j) / static_cast<float>(ny); // 2) put y on segment [0;1]
+                double x = static_cast<float>(i) / static_cast<float>(nx - 1); // 2) put x on segment [0;1]
+                double y = static_cast<float>(j) / static_cast<float>(ny - 1); // 2) put y on segment [0;1]
                 Point p(x,y);
                 M[i][j] = p;
             }
@@ -88,8 +88,8 @@ int main()
     Mesh M(nx,ny);
     M.print();
     // We need to subtract a 1 because of acosh return values
-    double x = mycosh(0.1) - 1; // 5) fit your x to (0;1)
-    double y = mycosh(0.3) - 1; // 5) fit your y to (0;1)
+    double x = mycosh(0.7) - 1; // 5) fit your x to (0;1)
+    double y = mycosh(0.9) - 1; // 5) fit your y to (0;1)
     Point p(x,y);
     p.print();
     double dmin = M.dist(0,0,p);
@@ -103,6 +103,6 @@ int main()
             }
         }
     }
-    cout << "Mesh point nearest to your point p is found.";
+    cout << "Mesh point nearest to your point p is found."  << endl;
     return 0;
 }
