@@ -1,0 +1,26 @@
+Mesh: Nx = 11 Ny = 21
+Coords x: 0 y: 0
+Coords x: 0.1 y: 0.05
+Coords x: 1 y: 1
+Coords x: 0.255169 y: 0.433086
+dmin = 0.460289 Coords x: 0 y: 0.05
+dmin = 0.419592 Coords x: 0 y: 0.1
+dmin = 0.381116 Coords x: 0 y: 0.15
+dmin = 0.345602 Coords x: 0 y: 0.2
+dmin = 0.314057 Coords x: 0 y: 0.25
+dmin = 0.28779 Coords x: 0 y: 0.3
+dmin = 0.268355 Coords x: 0 y: 0.35
+dmin = 0.257305 Coords x: 0 y: 0.4
+dmin = 0.255729 Coords x: 0 y: 0.45
+dmin = 0.239996 Coords x: 0.1 y: 0.25
+dmin = 0.204424 Coords x: 0.1 y: 0.3
+dmin = 0.176013 Coords x: 0.1 y: 0.35
+dmin = 0.158657 Coords x: 0.1 y: 0.4
+dmin = 0.156088 Coords x: 0.1 y: 0.45
+dmin = 0.144068 Coords x: 0.2 y: 0.3
+dmin = 0.0997344 Coords x: 0.2 y: 0.35
+dmin = 0.0643298 Coords x: 0.2 y: 0.4
+dmin = 0.0577035 Coords x: 0.2 y: 0.45
+dmin = 0.0557182 Coords x: 0.3 y: 0.4
+dmin = 0.0479155 Coords x: 0.3 y: 0.45
+Mesh point nearest to your point p is found.
